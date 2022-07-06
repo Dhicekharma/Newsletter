@@ -62,9 +62,11 @@ app.post("/failure",function(req,res){
     res.redirect("/");
 
 });
+app.post("/success",function(req,res){
+    res.redirect("/");
+});
 
-
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000 ,function(){
     console.log("port is live");
 });
 //api_key; e4794458440ec26ee7c85e8ada342c4a-us14
